@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		5E6C79B024828C3700A5A2F2 /* AppComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6C79A624828C3700A5A2F2 /* AppComponents.framework */; };
 		5E6C79B524828C3700A5A2F2 /* AppComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C79B424828C3700A5A2F2 /* AppComponentsTests.swift */; };
 		5E6C79B724828C3700A5A2F2 /* AppComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6C79A924828C3700A5A2F2 /* AppComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB222702485382A00BC3C02 /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2226F2485382A00BC3C02 /* ComponentType.swift */; };
 		DE502C1A7F9A938644EA6C6E /* Pods_AppComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CFF72A2B9C89B5E2BEEDE7 /* Pods_AppComponents.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		5E6C79AF24828C3700A5A2F2 /* AppComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6C79B424828C3700A5A2F2 /* AppComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponentsTests.swift; sourceTree = "<group>"; };
 		5E6C79B624828C3700A5A2F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB2226F2485382A00BC3C02 /* ComponentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentType.swift; sourceTree = "<group>"; };
 		AA2AF9EAA151619A7A2DE9A8 /* Pods-AppComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppComponents.release.xcconfig"; path = "Target Support Files/Pods-AppComponents/Pods-AppComponents.release.xcconfig"; sourceTree = "<group>"; };
 		AC4FE37C6405C421FF79C42A /* Pods-AppComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppComponents.debug.xcconfig"; path = "Target Support Files/Pods-AppComponents/Pods-AppComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6F218CBA1953FE031E50AF /* Pods_AppComponents_AppComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppComponents_AppComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 			children = (
 				5E6C79A924828C3700A5A2F2 /* AppComponents.h */,
 				5E6C79AA24828C3700A5A2F2 /* Info.plist */,
+				5EB2226F2485382A00BC3C02 /* ComponentType.swift */,
 			);
 			path = AppComponents;
 			sourceTree = "<group>";
@@ -115,7 +118,6 @@
 				E0CC59F736261EC5DAE05CBC /* Pods-AppComponents-AppComponentsTests.debug.xcconfig */,
 				D234A3A534800BD7CF94E162 /* Pods-AppComponents-AppComponentsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -184,6 +186,7 @@
 				TargetAttributes = {
 					5E6C79A524828C3700A5A2F2 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					5E6C79AE24828C3700A5A2F2 = {
 						CreatedOnToolsVersion = 11.4;
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB222702485382A00BC3C02 /* ComponentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC4FE37C6405C421FF79C42A /* Pods-AppComponents.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BR4HKNGPWY;
@@ -457,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.felippematos.AppComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA2AF9EAA151619A7A2DE9A8 /* Pods-AppComponents.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BR4HKNGPWY;
@@ -491,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0CC59F736261EC5DAE05CBC /* Pods-AppComponents-AppComponentsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR4HKNGPWY;
 				INFOPLIST_FILE = AppComponentsTests/Info.plist;
@@ -510,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D234A3A534800BD7CF94E162 /* Pods-AppComponents-AppComponentsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR4HKNGPWY;
 				INFOPLIST_FILE = AppComponentsTests/Info.plist;
