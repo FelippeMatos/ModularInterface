@@ -1,7 +1,7 @@
 PODS:
   - AppComponents (0.1.0):
     - "UIView+Shimmer"
-  - SnapshotTesting (1.1.0)
+  - SnapshotTesting (1.7.2)
   - "UIView+Shimmer (1.0.0)"
 
 DEPENDENCIES:
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppComponents: cb97f5b83fb43e3a8a16f1c4d9e55ee921046ba4
-  SnapshotTesting: 8ed6a4dceee63f59a60e1bc86f9adbba54eb9287
+  SnapshotTesting: 8caa6661fea7c8019d5b46de77c16bab99c36c5c
   "UIView+Shimmer": ed634f95e8f4bda666b28b47bd85a4336a4117d8
 
 PODFILE CHECKSUM: 65df816c0e4367539abc1a5bd97096a2a5f5f1f3

@@ -2,11 +2,12 @@
 //  AppComponents.h
 //  AppComponents
 //
-//  Created by Felippe Matos Francoski on 30/05/20.
+//  Created by Felippe Matos Francoski on 01/06/20.
 //  Copyright © 2020 Felippe Matos Francoski. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
+#import <UIKit/UIKit.h>
 
 //! Project version number for AppComponents.
 FOUNDATION_EXPORT double AppComponentsVersionNumber;

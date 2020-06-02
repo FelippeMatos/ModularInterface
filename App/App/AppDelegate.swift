@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  App
 //
-//  Created by Cauê Alves on 20/09/19.
-//  Copyright © 2019 ComponentsExample. All rights reserved.
+//  Created by Felippe Matos Francoski on 01/06/20.
+//  Copyright © 2020 Felippe Matos Francoski. All rights reserved.
 //
 
 import UIKit
